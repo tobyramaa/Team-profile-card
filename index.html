@@ -3,10 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Team Profiles</title>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 py-12 px-6">
+    <header class="md:flex md:items-center">
+        <div class="flex-1 flex justify-between items-center p-4">
+            <h1 class="font-['Felipa'] text-purple-600 text-5xl font-bold">OrbitLabs</h1>
+            <svg id="burger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:hidden">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+        <nav id="menu-btn" class="flex-[2] flex justify-between p-4 overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out md:max-h-full md:opacity-100 md:flex-1 md:flex">
+            <ul class="flex-1 grid grid-cols-2 md:flex md:justify-evenly">
+                <li><a href="#" class="hover:text-purple-500">Home</a></li>
+                <li><a href="#" class="hover:text-purple-500">About</a></li>
+                <li><a href="#" class="hover:text-purple-500">Services</a></li>
+                <li><a href="#" class="hover:text-purple-500">Contact</a></li> 
+            </ul>
+            <button class="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition">Sign Up</button>
+        </nav>
+    </header>
+
 
   <h1 class="text-3xl font-bold text-center text-gray-800 mb-10">
     Meet Our Team
@@ -16,86 +34,73 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
     <!-- Card 1 -->
-    <div class="rounded-2xl shadow-lg hover:shadow-blue-400/50 hover:scale-105 transition-all duration-300 ">
-      <div class="bg-white rounded-2xl p-6 text-center">
-        <img src="images/man 7.webp"
-             class="w-24 h-24 mx-auto rounded-full shadow-md"
-             alt="Profile">
+      <div class="bg-white rounded-2xl p-6 text-center shadow-lg transform hover:scale-105 transition duration-300 hover:ring-2 hover:ring-purple-500  border-b-4 border-pink-500">
+        <img src="images/man 7.webp"class="w-24 h-24 mx-auto rounded-full shadow-md"alt="Profile">
         <h2 class="text-xl font-semibold text-gray-800 mt-4">Tobi Rama</h2>
-        <p class="text-sm text-gray-500">Frontend Developer</p>
+        <p class="text-sm text-purple-600 font-medium">Frontend Developer</p>
         <p class="text-gray-600 text-sm mt-2">
           Builds responsive and interactive user interfaces.
         </p>
 
       </div>
-    </div>
 
 
 
     <!-- Card 2 -->
-    <div class="rounded-2xl shadow-lg hover:shadow-blue-400/50 hover:scale-105 transition-all duration-300">
-      <div class="bg-white rounded-2xl p-6 text-center">
-        <img src="images/man 2.jpeg"
-             class="w-24 h-24 mx-auto rounded-full shadow-md"
-             alt="Profile">
+      <div class="bg-white rounded-2xl p-6 text-center shadow-lg transform hover:scale-105 transition duration-300 hover:ring-2 hover:ring-purple-500 border-b-4 border-pink-500">
+        <img src="images/man 2.jpeg"class="w-24 h-24 mx-auto rounded-full shadow-md"alt="Profile">
         <h2 class="text-xl font-semibold text-gray-800 mt-4">Lee Chan</h2>
-        <p class="text-sm text-gray-500">UI Designer</p>
+        <p class="text-sm text-purple-600 font-medium">UI Designer</p>
         <p class="text-gray-600 text-sm mt-2">
           Designs clean and accessible digital experiences.
         </p>
       </div>
-    </div>
 
     <!-- Card 3 -->
-    <div class="rounded-2xl shadow-lg hover:shadow-blue-400/50 hover:scale-105 transition-all duration-300">
-      <div class="bg-white rounded-2xl p-6 text-center">
+      <div class="bg-white rounded-2xl p-6 text-center shadow-lg transform hover:scale-105 transition duration-300 hover:ring-2 hover:ring-purple-500 border-b-4 border-pink-500">
         <img src="images/man 6.webp"
              class="w-24 h-24 mx-auto rounded-full shadow-md"
              alt="Profile">
         <h2 class="text-xl font-semibold text-gray-800 mt-4">Benjamin Johnson</h2>
-        <p class="text-sm text-gray-500">Backend Engineer</p>
+        <p class="text-sm text-purple-600 font-medium">Backend Engineer</p>
         <p class="text-gray-600 text-sm mt-2">
           Builds secure and scalable server systems.
         </p>
       </div>
-    </div>
+
 
     <!-- Card 4 -->
-    <div class="rounded-2xl shadow-lg hover:shadow-blue-400/50 hover:scale-105 transition-all duration-300">
-      <div class="bg-white rounded-2xl p-6 text-center">
+      <div class="bg-white rounded-2xl p-6 text-center shadow-lg transform hover:scale-105 transition duration-300 hover:ring-2 hover:ring-purple-500 border-b-4 border-pink-500">
         <img src="images/woman 2.webp"
              class="w-24 h-24 mx-auto rounded-full shadow-md"
              alt="Profile">
         <h2 class="text-xl font-semibold text-gray-800 mt-4">Sarah Williams</h2>
-        <p class="text-sm text-gray-500">Product Manager</p>
+        <p class="text-sm text-purple-600 font-medium">Product Manager</p>
         <p class="text-gray-600 text-sm mt-2">
           Leads teams to deliver impactful digital products.
         </p>
       </div>
-    </div>
 
     <!-- Card 5 -->
-    <div class="rounded-2xl shadow-lg hover:shadow-blue-400/50 hover:scale-105 transition-all duration-300">
-      <div class="bg-white rounded-2xl p-6 text-center">
+      <div class="bg-white rounded-2xl p-6 text-center shadow-lg transform hover:scale-105 transition duration-300 hover:ring-2 hover:ring-purple-500 border-b-4 border-pink-500">
         <img src="images/man 4.webp"
              class="w-24 h-24 mx-auto rounded-full shadow-md"
              alt="Profile">
         <h2 class="text-xl font-semibold text-gray-800 mt-4">Ayodele Chunks</h2>
-        <p class="text-sm text-gray-500">DevOps Engineer</p>
+        <p class="text-sm text-purple-600 font-medium">DevOps Engineer</p>
         <p class="text-gray-600 text-sm mt-2">
           Automates deployment and cloud infrastructure.
         </p>
       </div>
-    </div>
+
 
     <!-- Card 6 -->
-    <div class="rounded-2xl shadow-lg hover:shadow-blue-400/50 hover:scale-105 transition-all duration-300">
-      <div class="bg-white rounded-2xl p-6 text-center">
+      <div class="bg-white rounded-2xl p-6 text-center shadow-lg transform hover:scale-105 transition duration-300 hover:ring-2 hover:ring-purple-500 border-b-4 border-pink-500">
         <img src="images/woman1.webp"
              class="w-24 h-24 mx-auto rounded-full shadow-md"
              alt="Profile">
         <h2 class="text-xl font-semibold text-gray-800 mt-4">Adebayo Damilola</h2>
-        <p class="text-sm text-gray-500">UX Researcher</p>
+        <p class="text-sm text-purple-600 font-medium">UX Researcher</p>
         <p class="text-gray-600 text-sm mt-2">
           Improves usability through data-driven insights.
         </p>
@@ -103,6 +108,22 @@
     </div>
 
   </div>
+
+
+   <script>
+        const burger = document.querySelector("#burger");
+        const menu = document.querySelector("#menu-btn");
+        let isOpen = false;
+
+
+        burger.addEventListener("click", () => {
+          menu.classList.toggle("max-h-0");
+          menu.classList.toggle("max-h-96");
+          menu.classList.toggle("opacity-0");
+          menu.classList.toggle("opacity-100");
+  
+        });
+    </script>
 
 </body>
 </html>
